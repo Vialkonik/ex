@@ -1,0 +1,586 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Excrypto365</title>
+        <meta name="author" content="Coder">
+        <meta name="description" content="Excrypto365 safety">
+        <meta name="keywords" content="Excrypto365 safety">
+        <input type="hidden" id="url" value="https://excrypto365.com/">
+                <!-- CSS -->
+        <!-- <link rel="stylesheet" href="https://excrypto365.com/public/css/index.css?u=22"> -->
+        <link rel="stylesheet" href="public/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://excrypto365.com/assets/css/font-awesome.min.css"> -->
+        <link href="npm/bootstrap%405.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- FONTS -->
+        <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700' rel='stylesheet' type='text/css'> -->
+        <!-- SCRIPTS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/BitExchanger.js?u=29"></script>
+        <link rel="stylesheet" href="assets/css/new/style.css?u=31">
+        <script>
+            var _GET = window.location.search.replace('?','').split('&').reduce(function(p,e) { var a = e.split('='); p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]); return p; }, {});
+            function bit_exchange_main_step_1(id_from = 0, id_tooo = 0) {
+                $('.crypt-gateway-from').addClass('crypt-hover').removeClass('crypt-active');
+                if(id_from && id_tooo) {
+                    console.log('[1] F:' + id_from + '-T:' + id_tooo);
+                    var url = $("#url").val(); 
+                    var data_url = url + "requests/bit_exchange_main_step_1.php";
+                    $.ajax({
+                        type: "POST",
+                        url: data_url,
+                        data: {
+                            id_from: id_from,
+                            id_tooo: id_tooo
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data); 
+                            $('#div_exchange_main_step_1').html(data.get_rows);
+                            $('.crypt-gateway-from-' + id_from).removeClass('crypt-hover').addClass('crypt-active');
+                        }
+                    });
+                }
+            }
+            function bit_exchange_main_step_2(id_from = 0, id_tooo = 0, amount_send = 0, amount_receive = 0) {
+                $('.crypt-gateway-to').addClass('crypt-hover').removeClass('crypt-active');
+                if(id_from && id_tooo) {
+                    console.log('[2] F:' + id_from + '-T:' + id_tooo);
+                    var url = $("#url").val(); 
+                    var data_url = url + "exchanger/send/" + id_from + "/" + id_tooo + "?amount_send=" + amount_send + "&amount_receive=" + amount_receive;
+                    window.location.href = data_url;
+                }
+            }
+        </script>   
+    </head>
+    <body>
+        <div class="mainindex">
+                    <div class="asdasd">
+            <header>
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-light mt-2 mb-2" href="index.htm" style="text-transform:uppercase;">Excrypto365</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 mt-0">
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link text-light asd1" href="https://excrypto365.com/exchanger">
+                                        Exchanger                                    </a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link text-light asd1" href="testimonials.html">
+                                        Testimonials                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light asd1" href="affiliate.html">
+                                        Affiliate                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-light asd1" href="contact.html">
+                                        Contact                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav mb-2 mb-lg-0 mt-0">
+                                                                <li class="nav-item">
+                                    <div class="d-inline">
+                                        <a class="nav-link text-light d-inline" href="login.html">
+                                            Login                                        </a>
+                                    </div>
+                                    <div class="d-inline">
+                                        /
+                                    </div>
+                                    <div class="d-inline">
+                                        <a class="nav-link text-light d-inline" href="register.html">
+                                            Create account                                        </a>
+                                    </div>
+                                </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+            </header>
+        </div>            <main>
+                <script>
+                    var exchange_gateway_1_number = 0;
+                    var exchange_gateway_2_number = 0;
+                    var exchange_gateway_1_amount_send = 0;
+                    var exchange_gateway_2_amount_receive = 0;
+                </script>
+                <div class="asdasd">
+                    <div class="trade">
+                        <div class="trade__text">
+                            <h1>
+                                Exchange cryptocurrency quickly and at the best rate.                            </h1>
+                            <p>
+                                We offer a rate better than 1000+ other exchangers.                            </p>
+                            <!-- <div class="row promo__bot_link">
+                                <div class="col-sm-12">
+                                    Exchange any crypto instantly and easily in the official Telegram-bot.                                </div>
+                            </div> -->
+                        </div>
+                        <div class="trade__window_1">
+                            <button class="window_button">Exchange</button>
+                            <div class="trade__window" style="padding: 0 0 10px 0px;">
+                                <form id="bit_exchange_form">
+                                    <input type="hidden" name="page" value="home">
+                                    <!-- <form id="bit_exchange_form">
+                                        <input type="hidden" id="page" name="page" value="home">
+                                        <div class="w-100" id="bit_exchange_results"></div>
+                                        <div class="row" id="bit_exchange_box">
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-3 d-none d-sm-block hidden-xs hidden-sm">
+                                                        <div style="margin-top:24px;">
+                                                            <img src="assets/icons/Bitcoin.png" id="bit_image_send" width="48px" height="48px" class="img-circle img-bordered">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-9">
+                                                        <div class="form-group">
+                                                            <label class="color-customer">
+                                                                Send currency                                                            </label>
+                                                            <select class="form-control form-control-lg form_style_1 input-lg mb-3" id="bit_gateway_send" name="bit_gateway_send" onchange="bit_refresh('1');">
+                                                                <option value="1" >Revolut EUR</option><option value="2" >Tether USDT</option><option value="11" >Ethereum ETH</option><option value="15" >Visa/Mastercard USD</option><option value="16" >Visa/Mastercard EUR</option><option value="18" >Ripple XRP</option><option value="20" >Tron TRX</option><option value="21" >Monero XMR</option><option value="22" >PayPal USD</option><option value="24" selected>Litecoin LTC</option>                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="color-customer">
+                                                                Send amount                                                            </label>
+                                                            <input type="text" class="form-control form-control-lg form_style_1 input-lg" id="bit_amount_send" name="bit_amount_send" value="0" onkeyup="bit_calculator();" onkeydown="bit_calculator();">
+                                                        </div>
+                                                        <div class="text text-muted" style="padding-bottom:10px;font-weight:bold;">
+                                                            Exchange rate:
+                                                            <br>
+                                                            <span id="bit_exchange_rate">
+                                                                -
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="row">
+                                                    <div class="col-md-9">
+                                                        <div class="form-group">
+                                                            <label class="color-customer">
+                                                                Receive currency                                                            </label>
+                                                            <select class="form-control form-control-lg form_style_1 input-lg mb-3" id="bit_gateway_receive" name="bit_gateway_receive" onchange="bit_refresh('2');">
+                                                                <option value="1" selected>Revolut EUR</option><option value="2" >Tether USDT</option><option value="11" >Ethereum ETH</option><option value="15" >Visa/Mastercard USD</option><option value="16" >Visa/Mastercard EUR</option><option value="18" >Ripple XRP</option><option value="20" >Tron TRX</option><option value="21" >Monero XMR</option><option value="22" >PayPal USD</option>                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="color-customer">
+                                                                Receive amount                                                            </label>
+                                                            <input type="text" class="form-control form-control-lg form_style_1 input-lg" id="bit_amount_receive" name="bit_amount_receive" disabled="" value="0">
+                                                        </div>
+                                                        <div class="text text-muted" style="padding-bottom:10px;font-weight:bold;">
+                                                            Reserve:
+                                                            <br>
+                                                            <span id="bit_reserve">
+                                                                -
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 d-none d-sm-block hidden-xs hidden-sm">
+                                                        <div style="margin-top:24px;">
+                                                            <img src="assets/icons/Skrill.png" id="bit_image_receive" width="48px" height="48px" class="img-circle img-bordered">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <input type="hidden" name="bit_amount_receive" id="bit_amount_receive2">
+                                                <input type="hidden" name="bit_rate_from" id="bit_rate_from">
+                                                <input type="hidden" name="bit_rate_to" id="bit_rate_to">
+                                                <input type="hidden" name="bit_currency_from" id="bit_currency_from">
+                                                <input type="hidden" name="bit_currency_to" id="bit_currency_to">
+                                                <input type="hidden" id="bit_login_to_exchange" name="bit_login_to_exchange" value="0">
+                                                <input type="hidden" id="bit_ses_uid" name="bit_ses_uid" value="0">
+                                                <center>
+                                                    <button type="button" class="btn btn-danger btn-lg w-100 mb-2" onclick="bit_exchange_step_1();">
+                                                        <i class="fa fa-refresh"></i>
+                                                        Exchange                                                    </button>
+                                                </center>
+                                                <center>
+                                                    <button type="button" class="btn btn-danger btn-lg w-100 mb-2" onclick="bit_exchange_main_step_2($('#bit_gateway_send').val(), $('#bit_gateway_receive').val());">
+                                                        <i class="fa fa-refresh"></i>
+                                                        Exchange                                                    </button>
+                                                </center>
+                                            </div>
+                                        </div>
+                                    </form>     -->     
+                                        <div id="bit_exchange_results" style="margin: 3%;width: 94%;border-radius: 5px;"></div>
+                                    <div class="trade__you_give">
+                                        <p class="trade__text1">You exchange</p>
+                                        <div class="trade__taking" style="min-height:30px;">
+                                            <input type="hidden" id="bit_gateway_send" name="bit_gateway_send" value="0">
+                                            <input type="text" id="bit_amount_send" name="bit_amount_send" class="trade__yougiving iphone-fix" style="min-height: 30px;" value="0" onkeyup="bit_calculator();" onkeydown="bit_calculator();">
+                                            <div class="btn-group obmen_button">
+                                                <button id="exchange_selector_div_1" class="btn btn-white btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-spin fa-spinner"></i>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-exchange">
+                                                    <li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="1" data-rate-from="" data-rate-from-currency="EUR" data-img="https://excrypto365.com/uploads/1650747140_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1650747140_icon.png" alt="" class="cryptologo">EUR</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="2" data-rate-from="" data-rate-from-currency="USDT" data-img="https://excrypto365.com/uploads/1650747297_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1650747297_icon.png" alt="" class="cryptologo">USDT</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="11" data-rate-from="" data-rate-from-currency="ETH" data-img="https://excrypto365.com/assets/icons/Ethereum.png" onclick="exchange_select_1(this);"><img src="assets/icons/Ethereum.png" alt="" class="cryptologo">ETH</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="15" data-rate-from="" data-rate-from-currency="USD" data-img="https://excrypto365.com/uploads/1651575431_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1651575431_icon.png" alt="" class="cryptologo">USD</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="16" data-rate-from="" data-rate-from-currency="EUR" data-img="https://excrypto365.com/uploads/1651575431_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1651575431_icon.png" alt="" class="cryptologo">EUR</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="18" data-rate-from="" data-rate-from-currency="XRP" data-img="https://excrypto365.com/uploads/1651576915_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1651576915_icon.png" alt="" class="cryptologo">XRP</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="20" data-rate-from="" data-rate-from-currency="TRX" data-img="https://excrypto365.com/uploads/1651609273_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1651609273_icon.png" alt="" class="cryptologo">TRX</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="21" data-rate-from="" data-rate-from-currency="XMR" data-img="https://excrypto365.com/uploads/1651610247_icon.png" onclick="exchange_select_1(this);"><img src="uploads/1651610247_icon.png" alt="" class="cryptologo">XMR</a></li><li><a class="dropdown-item dropdown-item-exchange " href="javascript:void(0)" data-id="22" data-rate-from="" data-rate-from-currency="USD" data-img="https://excrypto365.com/assets/icons/PayPal.png" onclick="exchange_select_1(this);"><img src="assets/icons/PayPal.png" alt="" class="cryptologo">USD</a></li><li><a class="dropdown-item dropdown-item-exchange active" href="javascript:void(0)" data-id="24" data-rate-from="" data-rate-from-currency="LTC" data-img="https://excrypto365.com/assets/icons/Litecoin.png" onclick="exchange_select_1(this);"><img src="assets/icons/Litecoin.png" alt="" class="cryptologo">LTC</a></li>
+                                                                    <script>
+                                                                        $('#exchange_selector_div_1').html('<img src="https://excrypto365.com/assets/icons/Litecoin.png" alt="" class="cryptologo">LTC');
+                                                                        $('#bit_gateway_send').val('24');
+                                                                        bit_calculator();
+                                                                    </script>
+                                                                                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="trade__p">
+                                        
+                                        <span id="bit_exchange_rate">
+                                            ~0.00
+                                        </span>
+                                    </p>
+                                    <div class="trade__you_take">
+                                        <p class="trade__text1">You receive</p>
+                                        <div class="trade__taking" style="min-height:30px;">
+                                            <input type="hidden" id="bit_gateway_receive" name="bit_gateway_receive" value="0">
+                                            <!-- <p id="bit_amount_receive" class="trade__youtaking">0.00</p> -->
+                                            <input type="text" id="bit_amount_receive" class="trade__yougiving iphone-fix" disabled="">
+                                            <div class="btn-group obmen_button">
+                                                <button id="exchange_selector_div_2" class="btn btn-white btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-spin fa-spinner"></i>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-receive">
+                                                    <li><a class="dropdown-item dropdown-item-receive active" href="javascript:void(0)" data-id="1" data-rate-to="" data-rate-to-currency="EUR" data-img="https://excrypto365.com/uploads/1650747140_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1650747140_icon.png" alt="" class="cryptologo">EUR</a></li>
+                                                                    <script>
+                                                                        $('#exchange_selector_div_2').html('<img src="https://excrypto365.com/uploads/1650747140_icon.png" alt="" class="cryptologo">EUR');
+                                                                        $('#bit_gateway_receive').val('1');
+                                                                        bit_calculator();
+                                                                    </script>
+                                                                <li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="2" data-rate-to="" data-rate-to-currency="USDT" data-img="https://excrypto365.com/uploads/1650747297_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1650747297_icon.png" alt="" class="cryptologo">USDT</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="11" data-rate-to="" data-rate-to-currency="ETH" data-img="https://excrypto365.com/assets/icons/Ethereum.png" onclick="exchange_select_2(this);"><img src="assets/icons/Ethereum.png" alt="" class="cryptologo">ETH</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="15" data-rate-to="" data-rate-to-currency="USD" data-img="https://excrypto365.com/uploads/1651575431_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1651575431_icon.png" alt="" class="cryptologo">USD</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="16" data-rate-to="" data-rate-to-currency="EUR" data-img="https://excrypto365.com/uploads/1651575431_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1651575431_icon.png" alt="" class="cryptologo">EUR</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="18" data-rate-to="" data-rate-to-currency="XRP" data-img="https://excrypto365.com/uploads/1651576915_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1651576915_icon.png" alt="" class="cryptologo">XRP</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="20" data-rate-to="" data-rate-to-currency="TRX" data-img="https://excrypto365.com/uploads/1651609273_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1651609273_icon.png" alt="" class="cryptologo">TRX</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="21" data-rate-to="" data-rate-to-currency="XMR" data-img="https://excrypto365.com/uploads/1651610247_icon.png" onclick="exchange_select_2(this);"><img src="uploads/1651610247_icon.png" alt="" class="cryptologo">XMR</a></li><li><a class="dropdown-item dropdown-item-receive " href="javascript:void(0)" data-id="22" data-rate-to="" data-rate-to-currency="USD" data-img="https://excrypto365.com/assets/icons/PayPal.png" onclick="exchange_select_2(this);"><img src="assets/icons/PayPal.png" alt="" class="cryptologo">USD</a></li>                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <input type="hidden" name="bit_amount_receive" id="bit_amount_receive2">
+                                    <input type="hidden" name="bit_rate_from" id="bit_rate_from">
+                                    <input type="hidden" name="bit_rate_to" id="bit_rate_to">
+                                    <input type="hidden" name="bit_currency_from" id="bit_currency_from">
+                                    <input type="hidden" name="bit_currency_to" id="bit_currency_to">
+                                    <input type="hidden" id="bit_login_to_exchange" name="bit_login_to_exchange" value="0">
+                                    <input type="hidden" id="bit_ses_uid" name="bit_ses_uid" value="0">
+                                    <button type="button" class="trade__button" style="color: white" onclick="bit_exchange_step_1();">
+                                        Start exchange
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function exchange_select_1(elem) {
+                        var number = $(elem).data('id');
+                        var rate_from = $(elem).data('rate-from');
+                        var currency_from = $(elem).data('rate-from-currency');
+                        $('.dropdown-item-exchange').removeClass('active');
+                        if(number) {
+                            exchange_gateway_1_number = number;
+                            $("#bit_gateway_send").val(exchange_gateway_1_number);
+                            $('#bit_rate_from').val(rate_from);
+                            $('#bit_currency_from').val(currency_from);
+                            var copy = $(elem).html();
+                            $('#exchange_selector_div_1').html(copy);
+                            $(elem).addClass('active');
+                            bit_rates();
+                            bit_reserve();
+                        }
+                    }
+                    function exchange_select_2(elem) {
+                        var number = $(elem).data('id');
+                        var rate_to = $(elem).data('rate-to');
+                        var currency_to = $(elem).data('rate-to-currency');
+                        $('.dropdown-item-receive').removeClass('active');
+                        if(number) {
+                            exchange_gateway_2_number = number;
+                            $("#bit_gateway_receive").val(exchange_gateway_2_number);
+                            $('#bit_rate_to').val(rate_to);
+                            $('#bit_currency_to').val(currency_to);
+                            var copy = $(elem).html();
+                            $('#exchange_selector_div_2').html(copy);
+                            $(elem).addClass('active');
+                            bit_rates();
+                            bit_reserve();
+                        }
+                    }
+                    function exchange_amount_1() {
+                        var number = $('#exchange_amount_1_input').val();
+                        if(number) {
+                            // exchange_gateway_1_amount_send = number;
+                        }
+                    }
+                    function exchange_amount_2() {
+                        var number = $('#exchange_amount_2_input').val();
+                        if(number) {
+                            // exchange_gateway_1_amount_send = number;
+                        }
+                    }
+                    $('#exchange_amount_1_input').on('keyup', function() {
+                        exchange_amount_1();
+                    });
+                    $('#exchange_amount_1_input').on('change', function() {
+                        exchange_amount_1();
+                    });
+                    function exchange_redirect() {
+
+                        document.location.href = 'exchanger/send/'+exchange_gateway_1_number+'/'+exchange_gateway_2_number+'/'+exchange_gateway_1_amount_send+'/'+exchange_gateway_2_amount_receive
+                    }
+                </script>
+                <div class="asdasd">
+                    <div class="listItems" style="margin-top: 15px !important;">
+                        <p class="recent">
+                            Latest exchanges                        </p>
+                        <div class="rectr">
+                                                                <div class="itemcr">
+                                        <img src="uploads/1650747297_icon.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            USDT                                            →
+                                        </span> 
+                                        <img src="uploads/1651610247_icon.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            XMR                                        </span> 
+                                        <!-- <span class="datest">
+                                            05.08.2022 00:50                                        </span> -->
+                                        <p class="infoscore">
+                                            2941.000000                                            USDT                                            →
+                                            1.000000                                            XMR                                        </p>
+                                    </div>
+                                                                        <div class="itemcr">
+                                        <img src="assets/icons/Ethereum.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            ETH                                            →
+                                        </span> 
+                                        <img src="assets/icons/Litecoin.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            LTC                                        </span> 
+                                        <!-- <span class="datest">
+                                            05.08.2022 00:50                                        </span> -->
+                                        <p class="infoscore">
+                                            0.000000                                            ETH                                            →
+                                            22.000000                                            LTC                                        </p>
+                                    </div>
+                                                                        <div class="itemcr">
+                                        <img src="uploads/1651610247_icon.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            XMR                                            →
+                                        </span> 
+                                        <img src="uploads/1650747140_icon.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            EUR                                        </span> 
+                                        <!-- <span class="datest">
+                                            05.08.2022 00:50                                        </span> -->
+                                        <p class="infoscore">
+                                            6.000000                                            XMR                                            →
+                                            2375.000000                                            EUR                                        </p>
+                                    </div>
+                                                                        <div class="itemcr">
+                                        <img src="uploads/1651576915_icon.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            XRP                                            →
+                                        </span> 
+                                        <img src="assets/icons/Litecoin.png" style="border-radius: 50%;" alt="" class="cryptologo">
+                                        <span>
+                                            LTC                                        </span> 
+                                        <!-- <span class="datest">
+                                            05.08.2022 00:40                                        </span> -->
+                                        <p class="infoscore">
+                                            2566.000000                                            XRP                                            →
+                                            20.000000                                            LTC                                        </p>
+                                    </div>
+                                                            </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="HIW"></div>
+        <main>
+            <div class="main1">
+                <div class="asdasd">
+                    <div class="main_about">
+                        <div class="about1">
+                            <p class="about__text">
+                                Top courses                            </p>
+                            <p class="about__text_bottom">
+                                We will choose the best course                            </p>
+                        </div>
+                        <div class="about2">
+                            <p class="about__text">
+                                Quick exchanges                            </p>
+                            <p class="about__text_bottom">
+                                ≈ 10-12 minutes                            </p>
+                        </div>
+                        <div class="about3">
+                            <p class="about__text">
+                                High limits                            </p>
+                            <p class="about__text_bottom">
+                                › 300 BTC                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="howitwork">
+                    <h2 class="howiw">Как это работает?</h2>
+                    <img src="https://excrypto365.com/assets/css/images/howitwork.png" alt="" class="imghiw">
+                </div> -->
+            </div>
+            <div class="obmeni">
+                <h2 class="howiw">
+                    Our partners                </h2>
+                <div class="knopki_obmen">
+                    <div class="crypt3">
+                        <img src="images/partner/icons/BestChange.svg?v=1" style="width: 200px;" class="valuti">
+                    </div>
+                    <div class="crypt3">
+                        <img src="images/partner/icons/Huobi.svg?v=1" class="valuti1">
+                    </div>
+                    <div class="crypt3">
+                        <img src="images/partner/icons/Kraken.svg?v=1" class="valuti1">
+                    </div>
+                    <div class="crypt3">
+                        <img src="images/partner/icons/kurs_expert.svg?v=1" class="valuti1">
+                    </div>
+                </div>
+            </div>
+            <div class="obmeni">
+                <h2 class="howiw">
+                    Our reserve                </h2>
+                <div class="knopki_obmen">
+                                            <div class="crypt2">
+                            <img src="uploads/1650747140_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Revolut EUR</strong></h6>
+                                <p>3072 EUR</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1650747297_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Tether USDT</strong></h6>
+                                <p>10481 USDT</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="assets/icons/Ethereum.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Ethereum ETH</strong></h6>
+                                <p>15 ETH</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1651575431_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Visa/Mastercard USD</strong></h6>
+                                <p>1851 USD</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1651575431_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Visa/Mastercard EUR</strong></h6>
+                                <p>2723 EUR</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1651576915_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Ripple XRP</strong></h6>
+                                <p>3722 XRP</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1651609273_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Tron TRX</strong></h6>
+                                <p>6015 TRX</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="uploads/1651610247_icon.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Monero XMR</strong></h6>
+                                <p>92 XMR</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="assets/icons/PayPal.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>PayPal USD</strong></h6>
+                                <p>2096 USD</p>
+                            </div>
+                        </div>
+                                                <div class="crypt2">
+                            <img src="assets/icons/Litecoin.png" class="valuti">
+                            <div class="ovalute">
+                                <h6><strong>Litecoin LTC</strong></h6>
+                                <p>17 LTC</p>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </main>        <footer>
+            <div class="mediafull1 container ">
+                <div class="valuta">
+                    <div class="preimus">
+                        <h5 class="m10">Quick Links</h5>
+                        <!-- <p class="preimT m10"><a href="https://excrypto365.com/exchanger" class="af">Exchanger</a></p> -->
+                        <p class="preimT m10"><a href="testimonials.html" class="af">Testimonials</a></p>
+                        <p class="preimT m10"><a href="affiliate.html" class="af">Affiliate</a></p>
+                    </div>
+                    <div class="preimus">
+                        <h5 class="m10">Terms & Support</h5>
+                        <p class="preimT m10"><a href="faq.html" class="af">Frequently asked questions</a></p>
+                        <p class="preimT m10"><a href="terms.html" class="af">Terms of services</a></p>
+                        <p class="preimT m10"><a href="policy.html" class="af">Privacy Policy</a></p>
+                        <p class="preimT m10"><a href="about.html" class="af">About</a></p>
+                        <p class="preimT m10"><a href="contact.html" class="af">Contact</a></p>
+                    </div>
+                    <div class="preimus">
+                        <h5 class="m10">Language</h5>
+                        <p class="preimT m10"><a href="#english" class="af">English</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+        <script src="npm/bootstrap%405.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

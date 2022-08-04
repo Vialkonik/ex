@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Excrypto365</title>
+        <meta name="author" content="Coder">
+        <meta name="description" content="Excrypto365 safety">
+        <meta name="keywords" content="Excrypto365 safety">
+        <input type="hidden" id="url" value="https://excrypto365.com/">
+                <!-- CSS -->
+        <!-- <link rel="stylesheet" href="https://excrypto365.com/public/css/index.css?u=22"> -->
+        <link rel="stylesheet" href="public/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="https://excrypto365.com/assets/css/font-awesome.min.css"> -->
+        <link href="npm/bootstrap%405.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- FONTS -->
+        <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,300,600,700' rel='stylesheet' type='text/css'> -->
+        <!-- SCRIPTS -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/BitExchanger.js?u=29"></script>
+        <link rel="stylesheet" href="assets/css/new/style.css?u=31">
+        <script>
+            var _GET = window.location.search.replace('?','').split('&').reduce(function(p,e) { var a = e.split('='); p[ decodeURIComponent(a[0])] = decodeURIComponent(a[1]); return p; }, {});
+            function bit_exchange_main_step_1(id_from = 0, id_tooo = 0) {
+                $('.crypt-gateway-from').addClass('crypt-hover').removeClass('crypt-active');
+                if(id_from && id_tooo) {
+                    console.log('[1] F:' + id_from + '-T:' + id_tooo);
+                    var url = $("#url").val(); 
+                    var data_url = url + "requests/bit_exchange_main_step_1.php";
+                    $.ajax({
+                        type: "POST",
+                        url: data_url,
+                        data: {
+                            id_from: id_from,
+                            id_tooo: id_tooo
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            console.log(data); 
+                            $('#div_exchange_main_step_1').html(data.get_rows);
+                            $('.crypt-gateway-from-' + id_from).removeClass('crypt-hover').addClass('crypt-active');
+                        }
+                    });
+                }
+            }
+            function bit_exchange_main_step_2(id_from = 0, id_tooo = 0, amount_send = 0, amount_receive = 0) {
+                $('.crypt-gateway-to').addClass('crypt-hover').removeClass('crypt-active');
+                if(id_from && id_tooo) {
+                    console.log('[2] F:' + id_from + '-T:' + id_tooo);
+                    var url = $("#url").val(); 
+                    var data_url = url + "exchanger/send/" + id_from + "/" + id_tooo + "?amount_send=" + amount_send + "&amount_receive=" + amount_receive;
+                    window.location.href = data_url;
+                }
+            }
+        </script>   
+    </head>
+    <body>
+		<div class="exchangepromo">
+		    <div class="asdasd">
+		        <header>
+		            <nav class="navbar navbar-expand-lg ">
+		                <div class="container-fluid">
+		                    <a class="navbar-brand text-light mt-2 mb-2" href="index.htm" style="text-transform:uppercase;">Excrypto365</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+		                    <div class="collapse navbar-collapse" style="z-index:999;" id="navbarSupportedContent">
+		                        <ul class="navbar-nav mb-2 mb-lg-0 mt-0">
+		                            <!-- <li class="nav-item">
+	                                    <a class="nav-link text-light asd1" href="https://excrypto365.com/exchanger">
+	                                        Exchanger	                                    </a>
+	                                </li> -->
+	                                <li class="nav-item">
+	                                    <a class="nav-link text-light asd1" href="testimonials.html">
+	                                        Testimonials	                                    </a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link text-light asd1" href="affiliate.html">
+	                                        Affiliate	                                    </a>
+	                                </li>
+	                                <li class="nav-item">
+	                                    <a class="nav-link text-light asd1" href="contact.html">
+	                                        Contact	                                    </a>
+	                                </li>
+		                        </ul>
+		                        <ul class="navbar-nav mb-2 mb-lg-0 mt-0">
+                                                                        <li class="nav-item">
+                                        <div class="d-inline">
+                                            <a class="nav-link text-light d-inline" href="login.html">
+                                                Login                                            </a>
+                                        </div>
+                                        <div class="d-inline">
+                                            /
+                                        </div>
+                                        <div class="d-inline">
+                                            <a class="nav-link text-light d-inline" href="register.html">
+                                                Create account                                            </a>
+                                        </div>
+                                    </li>
+                                                                    </ul>
+		                    </div>
+		                </div>
+		            </nav>
+		 <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+		        </header>
+
+
+		    </div>
+		    <!-- <h1 class="promotitle">
+		    	
+		    </h1> -->
+		</div><div class="main3">
+    <div class="mediafull1 container mb-4">
+        <div class="row d-flex justify-content-center mt-4">
+            <div class="col-md-5">
+            	<div class="card m-0 w-100" style="height:auto;">
+            		<p class="p-3 m-0">
+						Create account free					</p>
+					<hr style="margin:0;">
+					<div class="p-3">
+					    <div class="user-account">
+														<form action="" method="POST">
+								<div class="form-floating">
+									<input type="text" name="username" class="form-control mb-3" placeholder="Username">
+									<label for="floatingInput">Username</label>
+								</div>
+								<div class="form-floating">
+									<input type="email" name="email" class="form-control mb-3" placeholder="Email address">
+									<label for="floatingInput">Email address</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="password" class="form-control mb-3" placeholder="Password">
+									<label for="floatingInput">Password</label>
+								</div>
+								<div class="form-floating">
+									<input type="password" name="repassword" class="form-control mb-2" placeholder="Re-type Password">
+									<label for="floatingInput">Re-type Password</label>
+								</div>
+								<div class="row mt-2 mb-3">
+									<div class="col-md-6"></div>
+									<div class="col-md-6">
+										<div style="text-align:right;">
+											<a href="password/reset.html">Forgot password?</a>
+										</div>
+									</div>
+								</div>	
+								<button type="submit" name="bit_login" class="btn btn-danger btn-lg w-100">
+									Register								</button>
+								<p class="mt-3 mb-3 text-muted">
+									<a href="login.html" class="btn-primary">
+										Login with account									</a>
+								</p>
+							</form>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        <footer>
+            <div class="mediafull1 container ">
+                <div class="valuta">
+                    <div class="preimus">
+                        <h5 class="m10">Quick Links</h5>
+                        <!-- <p class="preimT m10"><a href="https://excrypto365.com/exchanger" class="af">Exchanger</a></p> -->
+                        <p class="preimT m10"><a href="testimonials.html" class="af">Testimonials</a></p>
+                        <p class="preimT m10"><a href="affiliate.html" class="af">Affiliate</a></p>
+                    </div>
+                    <div class="preimus">
+                        <h5 class="m10">Terms & Support</h5>
+                        <p class="preimT m10"><a href="faq.html" class="af">Frequently asked questions</a></p>
+                        <p class="preimT m10"><a href="terms.html" class="af">Terms of services</a></p>
+                        <p class="preimT m10"><a href="policy.html" class="af">Privacy Policy</a></p>
+                        <p class="preimT m10"><a href="about.html" class="af">About</a></p>
+                        <p class="preimT m10"><a href="contact.html" class="af">Contact</a></p>
+                    </div>
+                    <div class="preimus">
+                        <h5 class="m10">Language</h5>
+                        <p class="preimT m10"><a href="#english" class="af">English</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- SCRIPTS -->
+        <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '0edff2dc886526cf3b21b8a5d02c644875464737';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+        <script src="npm/bootstrap%405.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
